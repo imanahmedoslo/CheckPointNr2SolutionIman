@@ -26,7 +26,7 @@ namespace CheckPointNr2
 
             }
         }*/
-        public List<Player> Players;
+        private List<Player> Players { get; }
         public Team(string name="ukjent teamnavn")
         {
             Players = new List<Player>();
@@ -44,6 +44,11 @@ namespace CheckPointNr2
         {
             return $" teamnavn: {Name}.";
         }
+        public void Recruit(Player player)
+        {
+            Players.Add(player);
+        }
+
 
     }
 }

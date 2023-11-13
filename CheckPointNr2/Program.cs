@@ -8,9 +8,9 @@
             Player deffence1 = new ("Adebayo Akinfenwa", 10);
             StarPlayer Attack1 = new ("Lyle Taylor", 11, "kjempeflink til å score!");
             Player goalKeeper = new("Nikola Tzanev", 12);
-            footballTeam.Players.Add(deffence1);
-            footballTeam.Players.Add(goalKeeper);
-            footballTeam.Players.Add(Attack1);
+            footballTeam.Recruit(deffence1);
+            footballTeam.Recruit(goalKeeper);
+            footballTeam.Recruit(Attack1);
             footballTeam.PrintAllPlayers();
 
 
