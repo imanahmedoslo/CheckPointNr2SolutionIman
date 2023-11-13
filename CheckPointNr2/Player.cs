@@ -38,5 +38,17 @@ namespace CheckPointNr2
         {
             return $"spillers navn: {Name}, og nummer {Number}";
         }
+        public bool Equals(Player comparingPlayer)
+        {
+            return Name==comparingPlayer.Name&&Number==comparingPlayer.Number;
+        }
+        public override bool Equals(object? someobject)
+        {
+            if (someobject is Player comparingPlayer)
+            {
+                return Equals(comparingPlayer);
+            }
+            else return false;
+        }
     }
 }

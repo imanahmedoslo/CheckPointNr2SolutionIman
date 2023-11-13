@@ -12,9 +12,17 @@
             footballTeam.Recruit(goalKeeper);
             footballTeam.Recruit(Attack1);
             footballTeam.PrintAllPlayers();
+            try
+            {
+                Attack1.Description = "";
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.WriteLine(Attack1);
 
 
-       
 
         }
     }
