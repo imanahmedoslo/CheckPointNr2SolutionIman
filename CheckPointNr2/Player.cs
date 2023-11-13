@@ -10,7 +10,7 @@ namespace CheckPointNr2
      * Class: Player
        Properties: Name, Number
      */
-    internal class Player
+    public class Player
     {
        
         public string Name { get; } 
@@ -28,7 +28,7 @@ namespace CheckPointNr2
             } 
         }*/
         public int Number { get; set; }
-        public Player(string name, int number) 
+        public Player(string name="ukjent navn", int number=0) 
         {
             Name = name;
             Number = number;
