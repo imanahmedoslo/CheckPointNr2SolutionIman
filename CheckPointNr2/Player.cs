@@ -34,5 +34,9 @@ namespace CheckPointNr2
             Number = number;
 
         }
+        public override string ToString()
+        {
+            return $"spillers navn: {Name}, og nummer {Number}";
+        }
     }
 }

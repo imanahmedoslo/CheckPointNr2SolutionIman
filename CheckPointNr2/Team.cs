@@ -11,9 +11,9 @@ namespace CheckPointNr2
      */
     public class Team
     {
-        private string _name;
-        public string Name { get 
-            {
+       // private string _name;
+        public string Name { get; }
+           /* {
                 return _name;
             } set
             {
@@ -25,12 +25,24 @@ namespace CheckPointNr2
                 else { _name = value; }
 
             }
-        }
+        }*/
         public List<Player> Players;
         public Team(string name="ukjent teamnavn")
         {
             Players = new List<Player>();
             Name = name;
+        }
+        public void PrintAllPlayers()
+        {
+            Console.WriteLine($"{this} her er en liste over alle spillere:");
+            foreach (Player player in Players)
+            {
+                Console.WriteLine(player); 
+            }
+        }
+        public override string ToString()
+        {
+            return $" teamnavn: {Name}.";
         }
 
     }

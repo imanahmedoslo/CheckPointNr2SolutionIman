@@ -34,5 +34,9 @@ namespace CheckPointNr2
             Description = description;
 
         }
+        public override string ToString()
+        {
+            return $"{base.ToString()}. spilleren er stjernespiller. beskrivelse:{Description}.";
+        }
     }
 }
